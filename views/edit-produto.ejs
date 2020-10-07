@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastro Cliente</title>
+        <link href="/public/assets/reset.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href= "/public/assets/style2.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <img style="height: 45px; width: 100px; margin-right: 30px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/320px-Node.js_logo.svg.png">
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li style="margin-right: 15px;" class="nav-item active">
+                      <a class="nav-link" href="/">Inicio<span class="sr-only">(current)</span></a>
+                    </li>
+                    
+                    <li style="margin-right: 15px;" class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Cadastrar
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/cadastro-cliente">Cliente</a>
+                        <a class="dropdown-item" href="/cadastro-produto">Produto</a>
+                      </div>
+                    </li>
+                    <li style="margin-right: 15px;" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Mostrar
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="/show-cliente">Cliente</a>
+                          <a class="dropdown-item" href="/show-produto">Produto</a>
+                        </div>
+                      </li>
+                </div>
+              </nav>       
+        </header>
+        
+        <div id="editProduto-corpo" class="container-md">
+            <h2 id="editProduto-titulo">Editando um Cliente<h2>
+            <% data.forEach(function(details) { %>
+                <form form action="/edit-produto/<%= details._id %>" method="POST">
+                    <label class="label">Digite o nome do Produto:</label>
+                    <input class="form-control form-control-sm" type="text" name="produto" value="<%= details.produto %>">
+                    <label class="label">Escolha a marca do Produto:</label>
+                    <select class="custom-select" id="inputGroupSelect01" name="marca" value="<%= details.marca %>" >
+                    <option value="Marca 1">Marca 1</option>
+                    <option value="Marca 2">Marca 2</option>
+                    <option value="Marca 3">Marca 3</option>
+                    <option value="Marca 4">Marca 4</option>
+                    <option value="Marca 5">Marca 5</option>
+                    <option value="Marca 6">Marca 6</option>
+                    </select>
+                    <label class="label">Quantidade em estoque:</label>
+                    <input class="form-control form-control-sm" type="number" name="qntd_estoque" value="<%= details.qntd_estoque %>">
+                    <label class="label">Digite a descrição do Produto:</label>
+                    <input class="form-control form-control-sm" type="text" name="descricao" value="<%= details.qntd_estoque %>">
+                    <label class="label">Digite o Preço do produto:</label>
+                    <input class="form-control form-control-sm" type="number" placeholder="R$" name="preco" value="<%= details.preco %>">
+                    <label class="label">Apresentação:</label>
+                    <input class="form-control form-control-sm" type="text" name="apresentacao" value="<%= details.apresentacao %>">
+                    <label class="label">Ramo de operação:</label>
+                    <input class="form-control form-control-sm" type="text" name="ramo" value="<%= details.ramo %>">
+                    <label class="label">Entrega:</label>
+                    <select class="custom-select" id="inputGroupSelect01" name="tipo_entrega" value="<%= details.tipo_entrega %>">
+                    <option value="Entrega Física">Entrega Física</option>
+                    <option value="Envio pelos Correios">Envio pelos Correios</option>
+                    <option value="Recepção em outra Loja">Recepção em outra Loja</option>
+                    </select>
+                    <button class="btn btn-dark" type="submit">Atualizar</button>
+                </form>
+            <% }) %>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>
