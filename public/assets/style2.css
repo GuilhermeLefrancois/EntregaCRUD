@@ -1,0 +1,231 @@
+body
+{
+    width: 100%;
+    height: 100%;
+    background-image: url("/public/assets/images/Background4.jpg");
+}
+
+#home-corpo
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 180px;
+    margin-right: 180px;
+    padding-top: 50px;
+    background-color: white;
+    height: 530px;
+    border-color: blueviolet;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#home-titulo
+{
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline;
+    margin-left: 390px;
+}
+
+#home-form-cadastroCliente
+{
+    display: inline-block;
+    margin-top: 8%;
+}
+
+#home-form-cadastroCliente button
+{
+    height: 100px;
+    width: 480px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+#home-form-cadastroProduto
+{
+    display: inline-block;
+}
+
+#home-form-cadastroProduto button
+{
+    height: 100px;
+    width: 480px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+#cadastroCliente-corpo
+{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-left: 180px;
+    margin-right: 180px;
+    padding-top: 50px;
+    background-color: white;
+    height: 840px;
+    border-color: coral;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#cadastroCliente-titulo
+{
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline;
+    margin-left: 345px;
+}
+
+.label
+{
+    font-size: medium;
+}
+
+#cadastroCliente-corpo button
+{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 900px;
+}
+
+#showCliente-corpo
+{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 250px;
+    padding-top: 50px;
+    background-color: white;
+    height: 840px;
+    width: 1400px;
+    border-color: crimson;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#showClientes-titulo
+{
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline;
+    margin-left: 520px;
+}
+
+#tabela-clientes
+{
+    margin-top: 20px;
+}
+
+#cadastroProduto-corpo
+{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-left: 180px;
+    margin-right: 180px;
+    padding-top: 50px;
+    background-color: white;
+    height: 790px;
+    border-color: coral;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#cadastroProduto-titulo
+{
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline;
+    margin-left: 345px;
+}
+
+.label
+{
+    font-size: medium;
+}
+
+#cadastroProduto-corpo button
+{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 900px;
+}
+
+#showProdutos-corpo
+{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 250px;
+    padding-top: 50px;
+    background-color: white;
+    height: 840px;
+    width: 1400px;
+    border-color: crimson;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#showProdutos-titulo
+{
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline;
+    margin-left: 520px;
+}
+
+#tabela-produtos
+{
+    margin-top: 20px;
+}
+
+#editCliente-corpo
+{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-left: 180px;
+    margin-right: 180px;
+    padding-top: 50px;
+    background-color: white;
+    height: 700px;
+    border-color: coral;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#editCliente-corpo button
+{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 900px;
+}
+
+#editProduto-corpo
+{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-left: 180px;
+    margin-right: 180px;
+    padding-top: 50px;
+    background-color: white;
+    height: 800px;
+    border-color: coral;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#editProduto-titulo
+{
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline;
+    margin-left: 400px;
+}
+
+#editProduto-corpo button
+{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 900px;
+}
+
