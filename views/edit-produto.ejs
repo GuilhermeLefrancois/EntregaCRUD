@@ -48,7 +48,8 @@
                     <label class="label">Digite o nome do Produto:</label>
                     <input class="form-control form-control-sm" type="text" name="produto" value="<%= details.produto %>">
                     <label class="label">Escolha a marca do Produto:</label>
-                    <select class="custom-select" id="inputGroupSelect01" name="marca" value="<%= details.marca %>" >
+                    <select class="custom-select" id="inputGroupSelect01" name="marca">
+                    <option selected><%= details.marca %></option>
                     <option value="Marca 1">Marca 1</option>
                     <option value="Marca 2">Marca 2</option>
                     <option value="Marca 3">Marca 3</option>
@@ -59,7 +60,7 @@
                     <label class="label">Quantidade em estoque:</label>
                     <input class="form-control form-control-sm" type="number" name="qntd_estoque" value="<%= details.qntd_estoque %>">
                     <label class="label">Digite a descrição do Produto:</label>
-                    <input class="form-control form-control-sm" type="text" name="descricao" value="<%= details.qntd_estoque %>">
+                    <input class="form-control form-control-sm" type="text" name="descricao" value="<%= details.descricao %>">
                     <label class="label">Digite o Preço do produto:</label>
                     <input class="form-control form-control-sm" type="number" placeholder="R$" name="preco" value="<%= details.preco %>">
                     <label class="label">Apresentação:</label>
